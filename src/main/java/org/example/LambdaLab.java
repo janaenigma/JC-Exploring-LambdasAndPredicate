@@ -26,10 +26,20 @@ public class LambdaLab {
 
         Predicate<String> startsWithA = s -> s.startsWith("A");
 
-        filterAndPrint(callSigns, startsWithA, "Call signs starting with 'A'");
+        // filterAndPrint(callSigns, startsWithA, "Call signs starting with 'A'"); // Exercise  2
+
+        // Exercise 3: Chaining Predicates (and, negate)
+        Predicate<String> hasLengthGreaterThan5 = s -> s.length() > 5;
+
+        Predicate<String> complexCondition = startsWithA.and(hasLengthGreaterThan5);
+        filterAndPrint(callSigns, complexCondition, "Starts with 'A' AND length > 5");
+
+        Predicate<String> doesNotStartWithA = startsWithA.negate();
+        filterAndPrint(callSigns, doesNotStartWithA, "Does NOT start with 'A'");
     }
 
     // Exercise 2: Using Predicates to Filter a List - filterAndPrint method
+    // Exercise 3: Chaining Predicates (and, negate) - reusing the filterAndPrint method
     public static void filterAndPrint(List<String> list, Predicate<String> predicate, String description){
         System.out.println("--- " + description + " ---");
         for (String item : list){

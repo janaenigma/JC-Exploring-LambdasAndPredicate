@@ -24,3 +24,19 @@ Avenger
 2. **Observation/Output**
 
 ![Exercise 2 Output](exercise2.png)
+
+### Exercise 3: Chaining Predicates (`and`, `negate`)
+1. **Prediction**:
+```
+--- Starts with 'A' AND length > 5 ---
+Archangel
+Avenger
+
+--- Does NOT start with 'A' ---
+Bravo
+Echo
+```
+* The code reuses the code from the previous exercise, but this time adding another statement to evaluate the strings in the list. This time, the first printing statement will output all the strings which starts with `A` and has a length that is **less than 5**. The second print statement will print out all the strings that do **not** start with `A` as the `negate()` method was used here.
+2. **Observation/Output**
+
+![Exercise 3 Output](exercise3.png)
