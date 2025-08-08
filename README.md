@@ -11,3 +11,16 @@ Is 'This is a very long string' long? true
 2. **Observation/Output**
 
 ![Exercise 1 Output](exercise1.png)
+
+### Exercise 2: Using Predicates to Filter a List
+1. **Prediction**:
+```
+--- Call signs starting with 'A' ---
+Alpha
+Archangel
+Avenger
+```
+* The code will only print out all the Strings that starts with the letter `A` as that is what is being evaluated in the statement.
+2. **Observation/Output**
+
+![Exercise 2 Output](exercise2.png)
